@@ -1,0 +1,15 @@
+<% if errors.any? %>
+  <% errors.each do |error| %>
+    <p><%= error %></p>
+  <% end %>
+<% else %>
+  <% if prefixes.empty? %>
+    <p> No, it is not! </p>
+  <% else %>
+    <p> YES! It is! </p>
+  <% end %>
+<% end %>
+
+<a class='pure-button' href='/'>Ask another</a>
+
+
